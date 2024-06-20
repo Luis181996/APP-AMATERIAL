@@ -3,6 +3,7 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatTableModule} from '@angular/material/table';
+import { MaterialModule } from '../angular-material/material/material.module';
 
 //---TABLE INICIO--//
 export interface PeriodicElement {
@@ -28,7 +29,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
 @Component({
   selector: 'app-ejemplo-amaterial',
   standalone: true,
-  imports: [MatButtonModule, MatDividerModule,MatCardModule, MatTableModule],
+  imports: [MaterialModule],
   templateUrl: './ejemplo-amaterial.component.html',
   styleUrl: './ejemplo-amaterial.component.css'
 })
